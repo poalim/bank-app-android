@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    tools:context="com.bnhp.api.activities.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/mainTextViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="אני שנייה מסדר פה נתונים, כבר איתך"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mainTextViewMessage"
+        android:progress="0" />
+
+    <EditText
+        android:id="@+id/editTextEnterAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTextViewMessage"
+        android:layout_marginTop="5dp"
+        android:hint="@string/prompt_email"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/letMeIn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:background="@color/actionbar"
+        android:layout_below="@+id/editTextEnterAccount"
+        android:textColor="#FFFFFF"
+        android:text="יאללה"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/textViewErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/letMeIn"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="14sp"/>
+    
+</RelativeLayout>
