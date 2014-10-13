@@ -1,4 +1,4 @@
 bank-app
 ========
 
-sample projects for poalim bankapp hackathon
+sample android projects for poalim bankapp hackathon
